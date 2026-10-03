@@ -1,0 +1,11 @@
+Images and labels in clean/, degraded/ and real_rain/ : CC BY-SA 4.0
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Attribution:
+  Source frames and labels: GOOSE dataset, Fraunhofer IOSB — https://goose-dataset.de (CC BY-SA 4.0).
+  Degradations, label mapping to the RELLIS-3D ontology, and packaging: Siltframe — https://siltframe.com
+
+Share-alike: redistributing these images, the labels, or anything derived from them means keeping them under
+CC BY-SA 4.0 and keeping this attribution. Commercial use is allowed.
+
+Training a model on these images does not place that model under CC BY-SA 4.0; redistributing the images does.
