@@ -58,8 +58,10 @@ Measured by the same `evaluate.py`, included under `baselines/`. Mean mIoU loss 
 
 Two things worth noticing, and they are the reason this test exists:
 
-**Night is the universal failure.** Every model we have measured loses more than half its mIoU, and no architecture
-escapes it. If your validation set is daytime and dry, your number is not the number you will get in the field.
+**Night is the universal failure.** All three reference models above lose more than half their mIoU; across the five
+architectures on our [benchmark](https://siltframe.com/benchmark) — a separate protocol on RELLIS-3D — the loss is
+37–64%, and none of them escapes it. If your validation set is daytime and dry, your number is not the number you
+will get in the field.
 
 **A model that scores badly can still be the robust one.** SegFormer-B0 trained on RELLIS-3D alone has the smallest
 drop under rain and mud — because at 14.5 mIoU it had little left to lose. Relative drops have to be read next to the
@@ -67,9 +69,10 @@ clear-weather score, never alone.
 
 ## Why conditions, not just a single score
 
-We ran this protocol across six architectures and found that **dataset coverage beats augmentation**. Adding real
-frames from a dataset that contained forest tracks lifted real-adverse-weather accuracy by 26–35 points, while weather
-augmentation on top of that coverage was within noise on real weather. We traced one failure specifically: models
+We ran this protocol across five architectures and found that **dataset coverage beats augmentation**. Adding real
+frames from a dataset that contained forest tracks lifted real-adverse-weather accuracy by 26–35 points on all four
+architectures we could run that comparison on, while weather augmentation on top of that coverage was within noise on
+real weather. We traced one failure specifically: models
 trained only on open terrain call overhead tree canopy "sky" — 80 % of tree pixels in one real forest-road frame.
 Adding the right real frames took that to 0 %.
 
