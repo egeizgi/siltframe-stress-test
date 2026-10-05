@@ -14,7 +14,7 @@ Everything here — images, labels, the scoring script — is yours to use, incl
 
 **Run it in your browser, nothing to install:** [Kaggle notebook](https://www.kaggle.com/code/clappoxed/where-does-your-off-road-segmentation-model-break) — it scores a public segmentation model over all 165 frames in about seven seconds and prints the failure map. Copy it, swap in your model, done.
 
-Also on [Hugging Face](https://huggingface.co/datasets/clappoxes/siltframe-stress-test) and as a [Kaggle dataset](https://www.kaggle.com/datasets/clappoxed/off-road-segmentation-stress-test).
+Also on [Hugging Face](https://huggingface.co/datasets/siltframe/siltframe-stress-test) and as a [Kaggle dataset](https://www.kaggle.com/datasets/clappoxed/off-road-segmentation-stress-test).
 
 ## Quick start
 
